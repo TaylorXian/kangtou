@@ -4,7 +4,26 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Untitled Page</title>
+    <title>kongtoo</title>
+    <script type="text/javascript" src="http://jquery.com/src/jquery-latest.js"></script>
+    <script type="text/javascript">
+    //alert($("div").text());
+    var s;
+    $.ajax({
+        url: "Services/DbSrv.asmx/HelloWorld",
+        type: "POST",
+        dataType: "xml",
+        timeout: 100,
+        error: function(){
+            alert("Error loading WS");
+        },
+        success: function(xml){
+            s = $(xml).text();
+            //alert("ajax WS success");
+            alert(s);
+        }
+    });
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">

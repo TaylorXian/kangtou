@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KongToo.Web", "KongToo.Web\KongToo.Web.csproj", "{2462A3E9-53D9-4FEC-BFEF-85AC14610026}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{CDD40CC4-2D17-45BA-8275-12962DBDE1F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{2462A3E9-53D9-4FEC-BFEF-85AC14610026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2462A3E9-53D9-4FEC-BFEF-85AC14610026}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2462A3E9-53D9-4FEC-BFEF-85AC14610026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD40CC4-2D17-45BA-8275-12962DBDE1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD40CC4-2D17-45BA-8275-12962DBDE1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD40CC4-2D17-45BA-8275-12962DBDE1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD40CC4-2D17-45BA-8275-12962DBDE1F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

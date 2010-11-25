@@ -1,5 +1,5 @@
 KongToo.Web/*.suo
 
-KongToo.Web/KongToo.Web/bin/*
-KongToo.Web/KongToo.Web/obj/*
-KongToo.Web/KongToo.Web/*.user 
+KongToo.Web/*/bin/*
+KongToo.Web/*/obj/*
+KongToo.Web/*/*.csproj.user
