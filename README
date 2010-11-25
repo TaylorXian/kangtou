@@ -1,2 +1,4 @@
 .rdoc
-
+版本库中一些未包含的dll文件
+FireBird 相关.net provider 和 fbembed.dll 可以在下面网址下载
+http://www.firebirdsql.org/index.php?op=files

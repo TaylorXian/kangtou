@@ -18,7 +18,7 @@ namespace DataAccess
 				FbConnection.CreateDatabase(str);
 				return 0;
 			}
-			catch (Exception)
+			catch (Exception ex)
 			{
 				return -1;
 			}

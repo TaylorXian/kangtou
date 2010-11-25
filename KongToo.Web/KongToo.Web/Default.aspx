@@ -10,7 +10,7 @@
     //alert($("div").text());
     var s;
     $.ajax({
-        url: "Services/DbSrv.asmx/HelloWorld",
+        url: "Services/DbSrv.asmx/CreateDb",
         type: "POST",
         dataType: "xml",
         timeout: 100,
