@@ -10,6 +10,8 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using DataAccess;
+using System.Threading;
 
 namespace KongToo.Web
 {
@@ -18,6 +20,15 @@ namespace KongToo.Web
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            MyThreadPool myTP = (MyThreadPool)Application["MyThreadPool"];
+            myTP.Start = false;
+            Thread myThread = (Thread)Application["MyThread"];
+            this.ClientScript.RegisterClientScriptBlock(this.GetType(),
+                "", "alert('mythread state is " + myThread.ThreadState.ToString() + "')", true);
         }
     }
 }
