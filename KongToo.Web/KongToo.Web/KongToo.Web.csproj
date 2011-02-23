@@ -56,6 +56,9 @@
     <Content Include="Default.aspx" />
     <Content Include="Services\DbSrv.asmx" />
     <Content Include="Web.config" />
+    <Content Include="WebPages\JSTest.aspx" />
+    <Content Include="WebPages\moofxTest.aspx" />
+    <Content Include="WebPages\Test.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -70,6 +73,27 @@
       <DependentUpon>DbSrv.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WebPages\JSTest.aspx.cs">
+      <DependentUpon>JSTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\JSTest.aspx.designer.cs">
+      <DependentUpon>JSTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\moofxTest.aspx.cs">
+      <DependentUpon>moofxTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\moofxTest.aspx.designer.cs">
+      <DependentUpon>moofxTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
@@ -79,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="JS\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />

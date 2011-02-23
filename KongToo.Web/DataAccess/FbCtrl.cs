@@ -11,7 +11,7 @@ namespace DataAccess
 	{
 		public static int Test()
 		{
-			String str = "User=SYSDBA;Password=masterkey;Database=kongtoo.fdb;Charset=NONE;Servertype=1";
+			String str = "User=SYSDBA;Password=masterkey;Database=./kongtoo.fdb;Charset=NONE;Servertype=1";
 
 			try
 			{
